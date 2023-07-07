@@ -1,4 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+  background: #ECF0F1;
+  font-family: Montserrat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat !important;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+.layout {
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.box {
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 0px 14px 1px rgba(43, 100, 138, 0.04);
+  padding: 25px;
+
+  .title {
+    color: #1E2123;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}

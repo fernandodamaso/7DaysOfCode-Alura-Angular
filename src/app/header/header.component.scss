@@ -1,0 +1,41 @@
+header {
+  background: #2980B9;
+  padding: 40px 0;
+margin-bottom: 40px;
+  .layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h1 {
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    ul {
+      display: inline-flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 23px;
+
+      li {
+        a {
+          color: #FFF;
+          font-size: 15px;
+          font-weight: 500px;
+          &.active {
+            font-weight: bold;
+            color: #F1C40F;
+          }
+        }
+      }
+    }
+  }
+}
