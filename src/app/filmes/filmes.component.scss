@@ -2,7 +2,9 @@ form {
   display: flex;
   gap: 10px;
   max-width: 640px;
-
+  background: #ecf0f1c2;
+  padding: 20px;
+margin-top: 30px;
   input {
     flex: 2.2;
     height: 38px;
@@ -21,8 +23,14 @@ form {
     font-size: 13px;
 
     &.limpar {
-      background: #cbd0d1;
+      background: #dde1e1;
       color: #343637;
     }
   }
+}
+
+mat-spinner  {
+  max-width: 50px;
+  margin-top: 30px;
+  margin: auto;
 }

@@ -10,6 +10,7 @@ export class FilmesComponent {
   listaFilmes: filme[] = [];
   columns: string[] = ["title", "director", "producer", "release_date"];
   buscaTitulo = "";
+  loading = true;
 
   constructor(private filmesService: FilmesService) {}
 
@@ -19,14 +20,15 @@ export class FilmesComponent {
 
   getFilmes() {
     this.filmesService.getFilmes().subscribe((data) => {
-      console.log(data);
+      this.loading = false;
       this.listaFilmes = data.results;
     });
   }
 
   buscarPorTitulo() {
+    this.loading = true;
     this.filmesService.buscaFilmes(this.buscaTitulo).subscribe((data) => {
-      console.log(data);
+      this.loading = false;
       this.listaFilmes = data.results;
     });
   }
@@ -34,6 +36,7 @@ export class FilmesComponent {
   limparBusca() {
     this.buscaTitulo = "";
     this.listaFilmes = [];
+    this.loading = true;
     this.getFilmes();
   }
 
