@@ -1,5 +1,11 @@
 <h2>Filmes</h2>
 
+<form>
+  <input type="text" [(ngModel)]="buscaTitulo" name="buscaTitulo" />
+  <button (click)="buscarPorTitulo()">Buscar por titulo</button>
+  <button class="limpar" (click)="limparBusca()">Limpar busca</button>
+</form>
+
 <table mat-table [dataSource]="listaFilmes">
   <ng-container matColumnDef="title">
     <th mat-header-cell *matHeaderCellDef>Título</th>

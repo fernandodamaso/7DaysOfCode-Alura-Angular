@@ -9,6 +9,7 @@ import { filme } from "../_models/filme.model";
 export class FilmesComponent {
   listaFilmes: filme[] = [];
   columns: string[] = ["title", "director", "producer", "release_date"];
+  buscaTitulo = "";
 
   constructor(private filmesService: FilmesService) {}
 
@@ -18,9 +19,22 @@ export class FilmesComponent {
 
   getFilmes() {
     this.filmesService.getFilmes().subscribe((data) => {
-      console.log(data)
+      console.log(data);
       this.listaFilmes = data.results;
     });
+  }
+
+  buscarPorTitulo() {
+    this.filmesService.buscaFilmes(this.buscaTitulo).subscribe((data) => {
+      console.log(data);
+      this.listaFilmes = data.results;
+    });
+  }
+
+  limparBusca() {
+    this.buscaTitulo = "";
+    this.listaFilmes = [];
+    this.getFilmes();
   }
 
   formatarData(data: string) {

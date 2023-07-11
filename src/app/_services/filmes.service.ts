@@ -15,4 +15,9 @@ export class FilmesService {
     let url = `${this.api_url}/films`;
     return this.http.get<RespostaAPI<filme>>(url);
   }
+
+  buscaFilmes(titulo: string): Observable<RespostaAPI<filme>> {
+    let url = `${this.api_url}/films/?search=` + titulo;
+    return this.http.get<RespostaAPI<filme>>(url);
+  }
 }

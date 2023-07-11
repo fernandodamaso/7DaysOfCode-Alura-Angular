@@ -10,10 +10,11 @@ import { FilmesComponent } from "./filmes/filmes.component";
 import { NavesComponent } from "./naves/naves.component";
 import { HttpClientModule } from "@angular/common/http";
 import { MatTableModule } from "@angular/material/table";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, HeaderComponent, FilmesComponent, NavesComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, MatTableModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, MatTableModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
