@@ -13,8 +13,8 @@ const routes: Routes = [
     redirectTo: 'home',
   },
   { path: 'home', component: HomeComponent },
-  { path: 'naves', component: NavesComponent },
-  { path: 'filmes', component: FilmesComponent },
+  { path: 'starships', component: NavesComponent },
+  { path: 'films', component: FilmesComponent },
 ];
 
 @NgModule({
