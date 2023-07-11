@@ -5,7 +5,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HomeComponent } from "./home/home.component";
-import { HeaderComponent } from "./header/header.component";
+import { HeaderComponent } from "./_shared/header/header.component";
 import { FilmesComponent } from "./filmes/filmes.component";
 import { NavesComponent } from "./naves/naves.component";
 import { HttpClientModule } from "@angular/common/http";

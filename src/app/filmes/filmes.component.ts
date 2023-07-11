@@ -18,6 +18,7 @@ export class FilmesComponent {
 
   getFilmes() {
     this.filmesService.getFilmes().subscribe((data) => {
+      console.log(data)
       this.listaFilmes = data.results;
     });
   }
