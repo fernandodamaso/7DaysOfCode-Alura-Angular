@@ -1,4 +1,4 @@
-export interface filme {
+export interface film {
   title: string;
   episode_id: number;
   opening_crawl: string;

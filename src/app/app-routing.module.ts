@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { NavesComponent } from './naves/naves.component';
-import { FilmesComponent } from './filmes/filmes.component';
+import { StarshipComponent } from './starships/starship.component';
+import { FilmsComponent } from './films/films.component';
 
 const routes: Routes = [
   {
@@ -13,8 +13,8 @@ const routes: Routes = [
     redirectTo: 'home',
   },
   { path: 'home', component: HomeComponent },
-  { path: 'starships', component: NavesComponent },
-  { path: 'films', component: FilmesComponent },
+  { path: 'starships', component: StarshipComponent },
+  { path: 'films', component: FilmsComponent },
 ];
 
 @NgModule({

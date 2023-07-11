@@ -7,14 +7,14 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { HomeComponent } from "./home/home.component";
 import { HeaderComponent } from "./_shared/header/header.component";
-import { FilmesComponent } from "./filmes/filmes.component";
-import { NavesComponent } from "./naves/naves.component";
+import { FilmsComponent } from "./films/films.component";
+import { StarshipComponent } from "./starships/starship.component";
 import { HttpClientModule } from "@angular/common/http";
 import { MatTableModule } from "@angular/material/table";
 import { FormsModule } from "@angular/forms";
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, FilmesComponent, NavesComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, FilmsComponent, StarshipComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, MatTableModule, FormsModule, MatProgressSpinnerModule],
   providers: [],
   bootstrap: [AppComponent],

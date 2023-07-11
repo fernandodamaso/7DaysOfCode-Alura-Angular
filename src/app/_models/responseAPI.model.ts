@@ -1,4 +1,4 @@
-export interface RespostaAPI<T> {
+export interface responseAPI<T> {
   count: number;
   next: string;
   previous: string;
