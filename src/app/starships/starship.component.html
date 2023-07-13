@@ -26,8 +26,8 @@
     <td mat-cell *matCellDef="let el">el.manufacturer</td>
   </ng-container>
   <tr mat-header-row *matHeaderRowDef="columns"></tr>
-  <tr mat-row *matRowDef="let row; columns: columns"></tr>
+  <tr mat-row *matRowDef="let row; columns: columns" (click)="openShip(row)"></tr>
 </table>
 
-<mat-paginator (page)="onPageChange($event)" [pageSize]="10" [pageIndex]="pageIndex -1" [length]="totalStarships" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+<mat-paginator (page)="onPageChange($event)" [pageSize]="10" [pageIndex]="pageIndex - 1" [length]="totalStarships" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
 </mat-paginator>

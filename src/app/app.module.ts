@@ -13,10 +13,12 @@ import { HttpClientModule } from "@angular/common/http";
 import { MatTableModule } from "@angular/material/table";
 import { FormsModule } from "@angular/forms";
 import { MatPaginatorModule } from "@angular/material/paginator";
+import { MatDialogModule } from "@angular/material/dialog";
+import { DialogComponent } from './_shared/dialog/dialog.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, FilmsComponent, StarshipComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, MatTableModule, FormsModule, MatProgressSpinnerModule, MatPaginatorModule],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, FilmsComponent, StarshipComponent, DialogComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, MatTableModule, FormsModule, MatProgressSpinnerModule, MatPaginatorModule, MatDialogModule],
   providers: [],
   bootstrap: [AppComponent],
 })

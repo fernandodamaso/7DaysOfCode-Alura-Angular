@@ -2,6 +2,8 @@ import { Component } from "@angular/core";
 import { StarshipService } from "../_services/starship.service";
 import { Starship } from "../_models/starship.model";
 import { PageEvent } from "@angular/material/paginator";
+import { MatDialog } from "@angular/material/dialog";
+import { DialogComponent } from "../_shared/dialog/dialog.component";
 
 @Component({
   templateUrl: "./starship.component.html",
@@ -15,7 +17,7 @@ export class StarshipComponent {
   totalStarships!: number;
   pageIndex: number = 1;
 
-  constructor(private StarshipService: StarshipService) {}
+  constructor(private StarshipService: StarshipService, public dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.getData();
@@ -34,6 +36,15 @@ export class StarshipComponent {
     this.StarshipService.searchStarShips(this.searchInput).subscribe((data) => {
       this.loading = false;
       this.listData = data.results;
+    });
+  }
+
+  openShip(event: any) {
+    console.log(event);
+    this.dialog.open(DialogComponent, {
+      data: {
+        ship: event,
+      },
     });
   }
 
