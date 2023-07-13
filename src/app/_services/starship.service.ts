@@ -11,8 +11,8 @@ export class StarshipService {
   private api_url = "https://swapi.dev/api";
   constructor(private http: HttpClient) {}
 
-  getStarships(): Observable<responseAPI<Starship>> {
-    let url = `${this.api_url}/starships`;
+  getStarships(page: number): Observable<responseAPI<Starship>> {
+    let url = `${this.api_url}/starships/?page=${page}`;
     return this.http.get<responseAPI<Starship>>(url);
   }
 

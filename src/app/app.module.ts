@@ -12,10 +12,11 @@ import { StarshipComponent } from "./starships/starship.component";
 import { HttpClientModule } from "@angular/common/http";
 import { MatTableModule } from "@angular/material/table";
 import { FormsModule } from "@angular/forms";
+import { MatPaginatorModule } from "@angular/material/paginator";
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, HeaderComponent, FilmsComponent, StarshipComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, MatTableModule, FormsModule, MatProgressSpinnerModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, MatTableModule, FormsModule, MatProgressSpinnerModule, MatPaginatorModule],
   providers: [],
   bootstrap: [AppComponent],
 })
