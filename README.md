@@ -1,27 +1,25 @@
-# DesafioStarwarsAlura
+## #7DaysOfCode - Alura Challenge - Angular
+This project is part of the #7DaysOfCode Alura Challenge, focusing on Angular development.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
+## Objective
+The objective of this project is to develop an Angular application utilizing the SWAPI API. The application should consist of three main pages, implemented using Angular's routing capabilities:
 
-## Development server
+## Site Map
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Home Page: serving as the first link of the application, it is empty tough.
+List of Films page: Display a list of films retrieved from the SWAPI API. . Include a search input for filtering the list.
+List of Space Ships page: Display a list of space ships obtained from the SWAPI API. Include a search input for filtering the list. Clicking on a ship allow the user to view more details.
 
-## Code scaffolding
+## Installation
+To run the application locally, follow these steps:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Make sure you have the Angular CLI installed. If not, run npm install -g @angular/cli to install it globally.
+- Clone this repository to your local machine.
+- Navigate to the project's root directory.
+- Run npm install to install the project dependencies.
+- Run ng serve for a development server.
+- Open your browser and navigate to http://localhost:4200/.
+- The application will automatically reload if you make any changes to the source files.
+- Feel free to customize the above steps if you have any additional setup instructions specific to your project.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+In addition to the above changes, you may also consider adding the following sections to your README.md, depending on the requirements and complexity of your project:
